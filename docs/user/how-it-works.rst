@@ -42,8 +42,8 @@ Let's see how Lattice processes the second page of `this PDF`_, step-by-step.
 .. image:: ../_static/png/plot_line.png
     :height: 674
     :width: 1366
-    :scale: 50%
-    :align: left
+    :scale: 100%
+    :align: center
 
 2. Line intersections are detected, by overlapping the detected line segments and "`and`_"ing their pixel intensities.
 
@@ -52,8 +52,8 @@ Let's see how Lattice processes the second page of `this PDF`_, step-by-step.
 .. image:: ../_static/png/plot_joint.png
     :height: 674
     :width: 1366
-    :scale: 50%
-    :align: left
+    :scale: 100%
+    :align: center
 
 3. Table boundaries are computed by overlapping the detected line segments again, this time by "`or`_"ing their pixel intensities.
 
@@ -62,23 +62,23 @@ Let's see how Lattice processes the second page of `this PDF`_, step-by-step.
 .. image:: ../_static/png/plot_contour.png
     :height: 674
     :width: 1366
-    :scale: 50%
-    :align: left
+    :scale: 100%
+    :align: center
 
 4. Since dimensions of the PDF page and its image vary, the detected table boundaries, line intersections, and line segments are scaled and translated to the PDF page's coordinate space, and a representation of the table is created.
 
 .. image:: ../_static/png/table.png
     :height: 674
     :width: 1366
-    :scale: 50%
-    :align: left
+    :scale: 100%
+    :align: center
 
 5. Spanning cells are detected using the line segments and line intersections.
 
 .. image:: ../_static/png/plot_table.png
     :height: 674
     :width: 1366
-    :scale: 50%
-    :align: left
+    :scale: 100%
+    :align: center
 
 6. Finally, the words found on the page are assigned to the table's cells based on their *x* and *y* coordinates.
